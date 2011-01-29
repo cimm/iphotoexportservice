@@ -4,13 +4,13 @@ require 'iPhotoUploadExportDialogSections'
 require 'iPhotoImportTask'
 
 return {
-	hideSections = { 'exportLocation', 'postProcessing' },
+  hideSections = { 'exportLocation', 'postProcessing' },
 
-	exportPresetFields = {
-		{ key = 'createAlbum', default = true },
-		{ key = 'album', default = 'unknown album' },
-	},
+  exportPresetFields = {
+    { key = 'createAlbum', default = true },
+    { key = 'album', default = 'unknown album' },
+  },
 
-	sectionsForBottomOfDialog = iPhotoUploadExportDialogSections.sectionsForBottomOfDialog,
-	processRenderedPhotos = iPhotoImportTask.processRenderedPhotos,
+  sectionsForBottomOfDialog = iPhotoUploadExportDialogSections.sectionsForBottomOfDialog,
+  processRenderedPhotos = iPhotoImportTask.processRenderedPhotos,
 }
