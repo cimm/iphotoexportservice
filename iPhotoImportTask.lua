@@ -1,7 +1,6 @@
 local LrPathUtils = import 'LrPathUtils'
 local LrFileUtils = import 'LrFileUtils'
 local LrDialogs = import 'LrDialogs'
-local LrShell = import 'LrShell'
 local LrTasks = import 'LrTasks'
 
 iPhotoImportTask = {}
@@ -47,7 +46,7 @@ function iPhotoImportTask.processRenderedPhotos( functionContext, exportContext 
 
   -- Import photos in iPhoto and wait till photos are imported by reading the session file
   local iPhotoImporterPath = LrPathUtils.child( _PLUGIN.path, "iPhotoImport.app" )
-  LrShell.openFilesInApp( files, iPhotoImporterPath )
+  LrTasks.execute("osascript " .. _PLUGIN.path .. "/iPhotoImport.app " .. LrPathUtils.parent(files[1]))
 
   local done = false
   while done ~= true do
