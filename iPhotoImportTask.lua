@@ -50,8 +50,7 @@ function iPhotoImportTask.processRenderedPhotos( functionContext, exportContext 
 
   local done = false
   while done ~= true do
-    -- TODO find a better sleep method
-    LrTasks.yield()
+    LrTasks.sleep(2)
 
     local f = assert(io.open(path .. "/session.txt", "r"))
     for line in f:lines() do
