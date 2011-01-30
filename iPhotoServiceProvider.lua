@@ -5,6 +5,7 @@ require 'iPhotoImportTask'
 
 return {
   hideSections = { 'exportLocation', 'postProcessing' },
+  canExportVideo = true,
 
   exportPresetFields = {
     { key = 'createAlbum', default = true },
