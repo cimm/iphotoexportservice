@@ -8,6 +8,11 @@ Why would one like to duplicate photos from Lightroom in iPhoto? Well, Lightroom
 
 ## Changelog
 
+### 1.2
+
+  - Export video's
+  - Localization in English, French, and Dutch
+
 ### 1.1
 
   - Lightroom SDK 3.0 compatibility
