@@ -9,7 +9,7 @@ return {
 
   exportPresetFields = {
     { key = 'createAlbum', default = true },
-    { key = 'album', default = 'unknown album' },
+    { key = 'album', default = LOC '$$$/iPhotoExportService/UnknownAlbum=unknown album' },
   },
 
   sectionsForBottomOfDialog = iPhotoUploadExportDialogSections.sectionsForBottomOfDialog,

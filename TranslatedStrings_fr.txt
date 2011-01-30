@@ -1,0 +1,5 @@
+"$$$/iPhotoExportService/Title=iPhoto"
+"$$$/iPhotoExportService/CreateAlbum=Nouveau Album:"
+"$$$/iPhotoExportService/UnknownAlbum=album sans titre"
+"$$$/iPhotoExportService/ProgressMany=Importation de ^1 photos dans iPhoto"
+"$$$/iPhotoExportService/ProgressOne=Importation de une photo dans iPhoto"

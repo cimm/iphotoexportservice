@@ -12,7 +12,7 @@ function iPhotoUploadExportDialogSections.sectionsForBottomOfDialog( f, property
   local result = {
 
     {
-      title = "iPhoto",
+      title = LOC '$$$/iPhotoExportService/Title=iPhoto',
 
       f:row {
         f:spacer {
@@ -20,7 +20,7 @@ function iPhotoUploadExportDialogSections.sectionsForBottomOfDialog( f, property
         },
 
         f:checkbox {
-          title = "Create Album:",
+          title = LOC '$$$/iPhotoExportService/CreateAlbum=Create Album:',
           value = bind 'createAlbum',
         },
 

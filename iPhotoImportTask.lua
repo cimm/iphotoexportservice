@@ -14,8 +14,8 @@ function iPhotoImportTask.processRenderedPhotos( functionContext, exportContext 
   local nPhotos = exportSession:countRenditions()
   local progressScope = exportContext:configureProgress{
     title = nPhotos > 1
-        and LOC( "$$$/iPhotoImport/Progress=Importing ^1 photos in iPhoto", nPhotos )
-        or "Importing one photo in iPhoto",
+        and LOC( '$$$/iPhotoImport/ProgressMany=Importing ^1 photos in iPhoto', nPhotos )
+        or LOC '$$$/iPhotoExportService/ProgressOne=Importing one photo in iPhoto',
   }
 
   -- Export the photos
