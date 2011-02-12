@@ -8,6 +8,11 @@ Why would one like to duplicate photos from Lightroom in iPhoto? Well, Lightroom
 
 ## Changelog
 
+### 1.2.1
+
+  - Fix bug with unescaped space in the plug-in path
+  - Improved plug-in activation documentation in the installer
+
 ### 1.2
 
   - Export video's
