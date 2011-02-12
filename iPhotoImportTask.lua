@@ -45,8 +45,8 @@ function iPhotoImportTask.processRenderedPhotos( functionContext, exportContext 
   f:close()
 
   -- Import photos in iPhoto and wait till photos are imported by reading the session file
-  local iPhotoImporterPath = LrPathUtils.child( _PLUGIN.path, "iPhotoImport.app" )
-  LrTasks.execute("osascript " .. _PLUGIN.path .. "/iPhotoImport.app " .. LrPathUtils.parent(files[1]))
+  local importer_command = "osascript \"" .. LrPathUtils.child(_PLUGIN.path, "iPhotoImport.app") .. "\" " .. LrPathUtils.parent(files[1])
+  LrTasks.execute(importer_command)
 
   local done = false
   while done ~= true do
