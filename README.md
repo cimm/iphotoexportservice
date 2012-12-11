@@ -8,6 +8,11 @@ Why would one like to duplicate photos from Lightroom in iPhoto? Well, Lightroom
 
 ## Changelog
 
+### 1.2.2
+
+  - Localization in German
+  - Fix iPhotoImport naming mistake in localization key
+
 ### 1.2.1
 
   - Fix bug with unescaped space in the plug-in path
@@ -32,6 +37,10 @@ Why would one like to duplicate photos from Lightroom in iPhoto? Well, Lightroom
 ## Notice
 
 This plugin is a solution for a personal annoyance: access some of my Lightroom photos on my iPhone and iPad. This may, or may not suit your needs. I don't know any Lua or AppleScript so I hacked this together, it's not beatifull or clean in any way. Don't use this code as a Lightroom plugin code example when you try to learn how it works, get the SDK instead. That said, if you do know Lua or AppleScript and want to help improve this script you can fork away and change whatever part you like.
+
+## Thank you
+
+Big thanks to [@hajduk](https://github.com/hajduk) for his work on version 1.2.2!
 
 ## License
 
